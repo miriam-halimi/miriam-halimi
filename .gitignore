@@ -1,0 +1,21 @@
+# Pflichtblock: Schutz vor Schlüsseln und Laufzeit-Dateien
+# --- Secrets: NIE committen ---
+.env
+.env.*
+*.env
+!.env.example
+*.key
+*.pem
+*.secret
+.secrets/
+service_account.json
+credentials*.json
+token*.json
+
+# --- Laufzeit ---
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/secrets.toml
